@@ -68,14 +68,12 @@ for i, (clf_name, clf) in enumerate(classifiers.items()):
         clf.fit(X)
         scores_pred = clf.decision_function(X)
         y_pred = clf.predict(X)
-        
-    # reshape the prediction values to 0 for valid, 1 for fraud
+# reshape the prediction values to 0 for valid, 1 for fraud
     y_pred[y_pred == 1] = 0
     y_pred[y_pred == -1] = 1
     
     n_errors = (y_pred != Y).sum()
-    
-    # run classification metrics
+# run classification metrics
     print('{}: {}'.format(clf_name, n_errors))
     print(accuracy_score(Y, y_pred))
     print(classification_report(Y, y_pred))

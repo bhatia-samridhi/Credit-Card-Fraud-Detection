@@ -24,6 +24,7 @@ pip install library-name
 
 ### Dataset
 The dataset contains transactions made by credit card including fraud and real transactions both. Features V1, V2, … V28 are the principal components obtained with PCA.'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset.'Amount' is the transaction Amount.'Class' is the response variable and it has value 1 in case of fraud and 0 when the transaction is real. 
+
 Link to dataset is : https://drive.google.com/file/d/1xOCbSYjRii6RjBpOAjLKnTl9eiYmt82c/view?usp=sharing
 
 
